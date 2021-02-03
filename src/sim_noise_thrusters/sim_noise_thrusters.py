@@ -17,6 +17,7 @@ class ThrusterNoiseGenerator:
     def setpointsCallback(self, msg):
         new_msg = Setpoints()
         new_msg.header = msg.header
+        new_msg.setpoints = [0, 0, 0]
         new_msg.setpoints[0] = msg.setpoints[0]
         new_msg.setpoints[1] = msg.setpoints[1] + 0.1 # Example addin 0.1 to setpoint
         new_msg.setpoints[2] = msg.setpoints[2]

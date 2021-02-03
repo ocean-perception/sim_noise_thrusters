@@ -21,7 +21,7 @@
     </node>
 
     <node name="sim_noise_thrusters" pkg="sim_noise_thrusters" type="sim_noise_thrusters.py">
-        <remap from="setpoint_sub" to="controller/thruster_setpoints_original"/>
+        <remap from="setpoint_sub" to="thruster_setpoints_original"/>
         <remap from="setpoint_pub" to="thruster_setpoints_noised"/>
     </node>
 
@@ -36,7 +36,7 @@
         <param name="vehicle_config_launch_mission_package" value="cola2_$(arg robot_name)"/>
     </node>
     <node name="controller" pkg="cola2_control" type="controller_node">
-        <remap from="thruster_setpoints" to="thruster_setpoints_original"/>
+        <remap from="controller/thruster_setpoints" to="thruster_setpoints_original"/>
     </node>
     <node name="pilot" pkg="cola2_control" type="pilot_node" output="screen"/>
     <node name="teleoperation" pkg="cola2_control" type="teleoperation_node.py" output="screen"/>

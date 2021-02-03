@@ -1,2 +1,2 @@
-# Sim noise currents
+# Sim noise thrusters
 

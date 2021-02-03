@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sim_noise_thrusters</name>
+  <version>3.2.0</version>
+  <description>The sim_noise_thrusters package</description>
+  <maintainer email="software@iquarobotics.com">Iqua Robotics</maintainer>
+  <license>Iqua Robotics</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- ROS Dependencies -->
+  <depend>cola2_msgs</depend>
+
+  <!-- COLA2 Dependencies -->
+  <depend>cola2_smarty200</depend>
+</package>

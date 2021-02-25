@@ -1,6 +1,6 @@
 <launch>
     <!-- Configurable arguments -->
-    <arg name="robot_name" default="sparus2"/>
+    <arg name="robot_name" default= "smarty200"/>
     <arg name="enable_keyboard" default="true"/>
     <arg name="enable_joystick" default="false"/>
     <arg name="joystick_device" default="/dev/input/js0"/>

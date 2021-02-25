@@ -16,7 +16,7 @@
     <node name="watchdog" pkg="cola2_safety" type="watchdog_node.py" output="screen"/>
 
     <!-- Simulation nodes -->
-    <node name="dynamics" pkg="cola2_sim" type="dynamics_node">
+    <node name="dynamics" pkg="cola2_sim" type="dynamics_node.py">
         <remap from="controller/thruster_setpoints" to="thruster_setpoints_noised"/>
     </node>
 

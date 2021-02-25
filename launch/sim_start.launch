@@ -66,5 +66,5 @@
     </group>
 
     <!-- RViz -->
-    <node if="$(arg enable_rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find cola2_smarty200)/scene/sparus2.rviz"/>
+    <node if="$(arg enable_rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find cola2_smarty200)/scene/smarty200.rviz"/>
 </launch>
